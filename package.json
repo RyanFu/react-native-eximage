@@ -1,0 +1,25 @@
+{
+  "name": "react-native-eximage",
+  "version": "0.1.6",
+  "description": "A Third Party Image Module.",
+  "main": "ExImage.ios.js",
+  "author": "",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "image",
+    "loading"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.25.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willks/react-native-eximage.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willks/react-native-eximage/issues"
+  }
+}

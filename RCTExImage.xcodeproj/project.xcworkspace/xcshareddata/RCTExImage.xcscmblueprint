@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B752F10CE423153A1E28F30099DAFF3824419DC5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B752F10CE423153A1E28F30099DAFF3824419DC5" : 0,
+    "272F684BDB48C12FB82F63EFB90FF2436BBA2473" : 0,
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD03F218-E310-4175-8ED8-278628620978",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B752F10CE423153A1E28F30099DAFF3824419DC5" : "Trekka\/",
+    "272F684BDB48C12FB82F63EFB90FF2436BBA2473" : "trekka-deps\/SDWebImage\/Vendors\/libwebp\/",
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : "trekka-deps\/SDWebImage\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RCTExImage",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "node_modules\/react-native-eximage\/RCTExImage.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/webmproject\/libwebp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "272F684BDB48C12FB82F63EFB90FF2436BBA2473"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:rellekium\/trekka.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B752F10CE423153A1E28F30099DAFF3824419DC5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rs\/SDWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E28E36D423EC87798E52E2BF482E9F7A1E6479D6"
+    }
+  ]
+}
