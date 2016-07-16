@@ -14,6 +14,7 @@ var StyleSheetPropType = require('../react-native/Libraries/StyleSheet/StyleShee
 var flattenStyle = require('../react-native/Libraries/StyleSheet/flattenStyle');
 var requireNativeComponent = require('../react-native/Libraries/ReactIOS/requireNativeComponent');
 var resolveAssetSource = require('../react-native/Libraries/Image/resolveAssetSource');
+const _ = require('lodash');
 
 // var ImageResizeMode = require('ImageResizeMode');
 // var EdgeInsetsPropType = require('EdgeInsetsPropType');
@@ -174,7 +175,9 @@ var ExImage = React.createClass({
     }
     var resizeMode = this.props.resizeMode || style.resizeMode || 'cover';
 
-    var nativeProps = merge(...this.props, {
+    var clonedProps = _.clone(this.props);
+
+    var nativeProps = merge(clonedProps, {
       style,
       tintColor: style.tintColor,
       resizeMode: resizeMode,
