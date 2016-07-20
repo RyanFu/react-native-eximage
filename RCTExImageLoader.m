@@ -195,6 +195,11 @@ static void releaseAssetCallback(void *info) {
         // This means if we use any FB standard photo picker, we will get this prefix =(
         NSString *phAssetID = [imageTag substringFromIndex:[@"ph://" length]];
         PHFetchResult *results = [PHAsset fetchAssetsWithLocalIdentifiers:@[phAssetID] options:nil];
+        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+        options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
+        options.synchronous = NO;
+        options.networkAccessAllowed = YES;
+
         if (results.count == 0) {
             NSString *errorText = [NSString stringWithFormat:@"Failed to fetch PHAsset with local identifier %@ with no error message.", phAssetID];
             NSError *error = RCTErrorWithMessage(errorText);
@@ -203,7 +208,9 @@ static void releaseAssetCallback(void *info) {
         }
         
         PHAsset *asset = [results firstObject];
-        [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeDefault options:nil resultHandler:^(UIImage *result, NSDictionary *info) {
+        [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(size.floatValue, size.floatValue)
+                                                  contentMode:PHImageContentModeDefault
+                                                      options:nil resultHandler:^(UIImage *result, NSDictionary *info) {
             if (result) {
                 RCTDispatchCallbackOnMainQueue(callback, nil, result);
             } else {
