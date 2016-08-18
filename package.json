@@ -23,5 +23,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/willks/react-native-eximage/issues"
-  }
+  },
+  "scripts": {
+  "postinstall": "rnpm link"
+}
 }
