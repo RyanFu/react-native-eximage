@@ -210,7 +210,7 @@ static void releaseAssetCallback(void *info) {
         PHAsset *asset = [results firstObject];
         [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(size.floatValue, size.floatValue)
                                                   contentMode:PHImageContentModeDefault
-                                                      options:nil resultHandler:^(UIImage *result, NSDictionary *info) {
+                                                      options:options resultHandler:^(UIImage *result, NSDictionary *info) {
             if (result) {
                 RCTDispatchCallbackOnMainQueue(callback, nil, result);
             } else {
